@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+    stdin_open: true   # Make sure stdin_open is true
+    tty: true   # Make sure tty is true
